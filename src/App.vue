@@ -1,28 +1,33 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div class="container">
+        <nav>
+        </nav>
+        <header>
+            <div class="banner"></div>
+        </header>
+        <div class="body">
+            <!-- 左側搜尋條件 -->
+            <app-filter></app-filter>
+            <!-- 右側搜尋結果 -->
+            <app-result-list></app-result-list>
+        </div>
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import AppFilter from './components/AppFilter'
+import AppResultList from './components/AppResultList'
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    AppFilter,
+    AppResultList
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+@import url("./assets/style/style.css");
 </style>

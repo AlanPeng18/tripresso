@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+        </nav>
+        <header>
+            <div class="banner">
+        </header>
+        <div class="body">
+            <aside class="column-1-4">
+                <button class="btn-share"><i class="fas fa-share-alt"></i><span> 分享搜尋結果</span></button>
+                <div class="filters">
+                    <div class="filter filters-title">
+                        <h4 class="filter-title">篩選項目</h4>
+                    </div>
+                    <div class="filter">
+                        <button class="filter-caret"><i class="fas fa-angle-up"></i></button>
+                        <div class="filter-title">
+                            <i class="fas fa-calendar-week"></i>
+                            <p class="filter-title">出發日期</p>
+                        </div>
+                        <div class="filter-body">
+                            <input class="input-date" type="date" min="2020-11-07" name="departureDateStart"
+                                id="departureDateStart" value="2020-11-07">
+                            <span>~</span><input class="input-date" type="date" min="2020-11-07" name="departureDateEnd"
+                                id="departureDateEnd" value="2020-11-07">
+                        </div>
+                    </div>
+                    <div class="filter">
+                        <button class="filter-caret"><i class="fas fa-angle-up"></i></button>
+                        <div class="filter-title">
+                            <i class="far fa-compass"></i>
+                            <p class="filter-title">目的地</p>
+                        </div>
+                        <div class="filter-body">
+                            <div class="form-control">
+                                <input type="checkbox" name="mainLandChina" id="mainLandChina">
+                                <label for="mainLandChina">港澳中國</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter">
+                        <button class="filter-caret"><i class="fas fa-angle-up"></i></button>
+                        <div class="filter-title">
+                            <i class="far fa-clock"></i>
+                            <p class="filter-title">天數</p>
+                        </div>
+                        <div class="filter-body">
+                            <div class="form-control">
+                                <input type="checkbox" name="belowFiveDays" id="mainLandChina">
+                                <label for="belowFiveDays">5天以下</label>
+                            </div>
+                            <div class="form-control">
+                                <input type="checkbox" name="SixToEightDays" id="mainLandChina">
+                                <label for="SixToEightDays">6-8天</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter">
+                        <button class="filter-caret"><i class="fas fa-angle-down"></i></button>
+                        <div class="filter-title">
+                            <i class="fas fa-flag"></i>
+                            <p class="filter-title">成團狀態</p>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+            <section class="column-3-4">
+                <div class="result-summary">
+                    <h2><strong class="big">台灣旅遊 </strong><span class="text-blue">130</span> 個行程，平均團費 <span
+                            class="text-blue">4,493</span> 元</h2>
+                </div>
+                <div class="result-sort">
+                    <p class="sort-title">排序</p>
+                    <div class="sort-btns">
+                        <button class="btn-sort">精選評分</button>
+                        <button class="btn-sort btn-sort--now">價格 <i class="fas fa-caret-down"></i></button>
+                        <button class="btn-sort">天數 <i class="fas fa-caret-down"></i></button>
+                        <button class="btn-sort">出發日期</button>
+                    </div>
+                </div>
+                <div class="result">
+                    <div class="result-item spotlight">
+                        <div class="result-img">
+                            <img src="https://de0s2vtm6rzpn.cloudfront.net/146415/width/1595229720_rsz.jpg" alt="">
+                        </div>
+                        <div class="result-body">
+                            <div class="icon-btns">
+                                <button class="btn-icon">
+                                    <i class="fas fa-exchange-alt"></i>
+                                </button>
+                                <button class="btn-icon">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                            </div>
+                            <p class="result-agency">喜鴻旅遊
+                                <i class="fas fa-star text-yellow"></i>
+                                <i class="fas fa-star text-yellow"></i>
+                                <i class="fas fa-star text-yellow"></i>
+                                <i class="fas fa-star text-yellow"></i>
+                                <i class="fas fa-star text-grey"></i>
+                            </p>
+                            <h3 class="result-title">樂遊花蓮 太魯閣blablabla</h3>
+                            <div class="result-location">
+                                <p class="location"><i class="fas fa-map-marker-alt"></i> 花蓮</p>
+                            </div>
+                            <div class="result-tags">
+                                <p class="tag">企業包團</p>
+                                <p class="tag">振興三倍券</p>
+                            </div>
+                            <div class="result-groups">
+                                <div class="result-group">
+                                    <p class="date text-azure">10/04(日)</p>
+                                    <p class="party color-azure">可售20位</p>
+                                </div>
+                                <div class="result-group">
+                                    <p class="date text-azure">10/16(五)</p>
+                                    <p class="party color-azure">可售20位</p>
+                                </div>
+                                <button class="btn-more-group">更多日期</button>
+                            </div>
+                            <div class="result-price">
+                                <p><strong class="text-orange big">2</strong>天 <strong class="text-orange big">6,999</strong>元起</p>
+                                <small><i class="fas fa-coins text-yellow"></i> 下單現賺咖幣 <span class="text-orange">$595</span> 起</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>
